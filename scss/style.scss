@@ -7,6 +7,7 @@ $color-1: #000;
 $color-grey: #808080;
 $color-skyblue: #112b3c;
 $color-pink: #e61c5d;
+$color-orange: #FFBD39;
 $color-search-container: #fff;
 
 * {
@@ -297,7 +298,7 @@ section.about {
             font-size: 16px;
             line-height: 19px;
             font-weight: 700;
-            letter-spacing: 0.2rem;
+            letter-spacing: 0.1rem;
         }
 
         .about-heading {
@@ -349,3 +350,151 @@ section.about {
         }
     }
 }
+
+// ================= Packages section ===============
+section.packages {
+    margin: 96px auto;
+    height: 719px;
+
+    .package-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+
+        .package-header-content {
+            width: 591px;
+
+            .package-title {
+                color: $color-pink;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.1rem;
+                margin-bottom: 4px;
+            }
+
+            .package-heading {
+                color: $color-skyblue;
+                font-size: 48px;
+                line-height: 58px;
+            }
+        }
+
+        .slide-navigation {
+            width: 108px;
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .slide-icon {
+                width: 48px;
+                height: inherit;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .package-slider {
+        height: 500px;
+        width: 1170px;
+        display: flex;
+        overflow: hidden;
+
+        .slide-item {
+            margin-right: 30px;
+            width: 370px;
+            filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
+            transition: all 0.5s step-start;
+
+            .slide-image {
+                width: inherit;
+                height: 300px;
+            }
+
+            .slide-content {
+                padding: 20px 26px 28px 24px;
+
+                .slide-heading {
+                    font-size: 20px;
+                    line-height: 26.4px;
+                    font-weight: 700;
+                    color: $color-skyblue;
+                }
+
+                .client {
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    font-weight: 400;
+                    margin: 8px 0;
+                    color: $color-grey;
+                }
+
+                .rating {
+                    width: 49.55px;
+                    height: 25px;
+                    display: flex;
+                    background: rgba(255, 189, 57, 0.12);
+                    border-radius: 38px;
+                    padding: 4px 6px;
+                    align-items: center;
+                    
+                    .img {
+                        width: 15.55px;
+                        height: 15.64;
+                    }
+
+                    .rating-value {
+                        width: 20px;
+                        height: 17px;
+                        margin-left: 2px;
+                        color: $color-orange;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+
+                .slide-footer {
+                    margin-top: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .price {
+                        color: $color-pink;
+                        font-weight: 700;
+                        line-height: 31.68px;
+                        font-size: 24px;
+                    }
+
+                    .package-duration {
+                        line-height: 15.84px;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $color-grey;
+                    }
+                }
+            }
+        }
+
+        .slide-item:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .nav-end {
+        flex-direction: row-reverse;
+
+        .slide-item:first-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
