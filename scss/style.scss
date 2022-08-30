@@ -4,14 +4,10 @@ $bg-1: #f5f5f5;
 $bg-nav: #fff;
 
 $color-1: #000;
-$color-nav-1: #808080;
-$color-nav-active: #112b3c;
-$color-nav-active-bottom: #e61c5d;
-$color-hero-heading: #112b3c;
-$color-hero-text: #808080;
+$color-grey: #808080;
+$color-skyblue: #112b3c;
+$color-pink: #e61c5d;
 $color-search-container: #fff;
-
-$color-btn: #e61c5d;
 
 * {
     box-sizing: border-box;
@@ -42,7 +38,7 @@ body {
     border-radius: 45px;
     border: none;
     color: $bg-nav;
-    background-color: $color-btn;
+    background-color: $color-pink;
 }
 
 @media (min-width: 768px) {
@@ -97,7 +93,7 @@ nav {
     position: absolute;
     width: 18px;
     height: 4px;
-    background: $color-nav-active-bottom;
+    background: $color-pink;
     border-radius: 30px;
     bottom: 0%;
     left: 50%;
@@ -105,14 +101,14 @@ nav {
 }
 
 .nav-link {
-    color: $color-nav-1;
+    color: $color-grey;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
 }
 
 .navbar .active .nav-link {
-    color: $color-nav-active;
+    color: $color-skyblue;
 }
 
 .auth .login,
@@ -122,7 +118,7 @@ nav {
 
 .auth .login {
     background-color: transparent;
-    color: $color-nav-1;
+    color: $color-grey;
     font-size: 20px;
     line-height: 24px;
     font-weight: 500;
@@ -152,7 +148,7 @@ section.hero {
     font-size: 64px;
     line-height: 76.8px;
     font-weight: 700;
-    color: $color-hero-heading;
+    color: $color-skyblue;
     text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 }
 
@@ -160,7 +156,7 @@ section.hero {
     font-size: 24px;
     line-height: 28.8px;
     font-weight: 400;
-    color: $color-hero-text;
+    color: $color-grey;
     margin: 32px 101px 32px 0;
 }
 
@@ -216,7 +212,7 @@ section.hero {
     font-size: 12px;
     font-weight: 600;
     line-height: 14.4px;
-    color: $color-hero-text;
+    color: $color-grey;
     margin-right: 6px;
 }
 
@@ -232,14 +228,14 @@ section.hero {
     font-size: 12px;
     line-height: 14.4px;
     font-weight: 700;
-    color: $color-hero-heading;
+    color: $color-skyblue;
 }
 
 .divider {
     width: 1px;
     height: 24px;
-    background-color: $color-hero-text;
-    opacity: .24;
+    background-color: $color-grey;
+    opacity: 0.24;
 }
 
 .date-search {
@@ -271,4 +267,85 @@ section.hero {
 .hero-image img {
     width: 100%;
     height: 100%;
+}
+
+// =================== About section =================
+section.about {
+    display: flex;
+    margin: 26px auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 133px;
+
+    .about-image {
+        width: 566px;
+        width: 675px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .about-content {
+        width: 454.52px;
+        height: 410.6px;
+        margin-right: 16.48px;
+
+        .about-title {
+            color: $color-pink;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+        }
+
+        .about-heading {
+            color: $color-skyblue;
+            font-size: 48px;
+            line-height: 58px;
+            font-weight: 700;
+            margin: 4px 0;
+        }
+
+        .about-details {
+            font-style: 20px;
+            font-weight: 400;
+            line-height: 22px;
+            margin: 20px 0;
+            color: $color-grey;
+        }
+
+        .about-insight {
+            display: flex;
+            width: 472px;
+            height: 86px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4px;
+
+            .insight-item {
+                width: 110px;
+                margin-right: 24px;
+
+                .insight-value {
+                    font-size: 40px;
+                    line-height: 48px;
+                    font-weight: 700;
+                    color: $color-pink;
+                }
+
+                .insight-details {
+                    font-weight: 400;
+                    line-height: 19px;
+                    font-size: 16px;
+                    color: $color-grey;
+                }
+            }
+
+            .insight-item:last-child {
+                margin-left: 0;
+            }
+        }
+    }
 }
