@@ -31,68 +31,10 @@ body {
   background-color: #e61c5d;
 }
 
-@media screen and (max-width: 1400px) {
-  section.hero {
-    padding: 0 60px;
-  }
+section, header, footer {
+  overflow: hidden;
 }
-@media screen and (max-width: 1170px) {
-  .container {
-    width: 1000px;
-    padding: 0 60px;
-  }
-  header .navbar {
-    width: 350px;
-  }
-  header .navbar .nav-link {
-    font-size: 18px;
-  }
-  header .auth .login, header .auth .register {
-    font-size: 18px !important;
-  }
-  section.hero {
-    flex-wrap: wrap-reverse;
-    justify-content: center !important;
-  }
-  section.hero .hero-content {
-    margin-top: 80px;
-    text-align: center;
-  }
-  section.hero .hero-content .hero-heading {
-    font-size: 44px;
-    line-height: 54px;
-  }
-  section.hero .hero-content .hero-text {
-    font-size: 20px;
-    line-height: 24px;
-    margin: 40px auto;
-  }
-  section.hero .hero-content .search-container {
-    margin: 0 auto;
-  }
-  section.hero .hero-image {
-    margin-left: 40px;
-    margin-top: 40px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .container {
-    width: 850px;
-  }
-}
-@media screen and (max-width: 860px) {
-  .container {
-    width: 700px;
-  }
-  .auth {
-    display: none;
-  }
-}
-@media screen and (max-width: 760px) {
-  .container {
-    width: 600px;
-  }
-}
+
 header {
   background-color: #fff;
   box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
@@ -311,7 +253,7 @@ section.about {
 }
 section.about .about-image {
   width: 566px;
-  width: 675px;
+  height: 675px;
 }
 section.about .about-image img {
   width: 100%;
@@ -840,6 +782,85 @@ footer .newsletter-col .newsletter-form .submit {
   border: none;
   background-color: inherit;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+  section.hero {
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .container {
+    width: 1000px;
+    padding: 0 60px;
+  }
+  header .navbar {
+    width: 350px;
+  }
+  header .navbar .nav-link {
+    font-size: 18px;
+  }
+  header .auth .login,
+header .auth .register {
+    font-size: 18px !important;
+  }
+  section.hero {
+    flex-wrap: wrap-reverse;
+    justify-content: center !important;
+  }
+  section.hero .hero-content {
+    margin-top: 80px;
+    text-align: center;
+  }
+  section.hero .hero-content .hero-heading {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  section.hero .hero-content .hero-text {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 40px auto;
+  }
+  section.hero .hero-content .search-container {
+    margin: 0 auto;
+  }
+  section.hero .hero-image {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 850px;
+  }
+  section.about {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 30;
+  }
+  section.about .about-content {
+    text-align: center;
+    width: 600px !important;
+  }
+  section.about .about-content .about-heading {
+    margin: 10px auto !important;
+  }
+  section.about .about-content .about-insight {
+    margin: 4px auto !important;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container {
+    width: 700px;
+  }
+  .auth {
+    display: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    width: 600px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

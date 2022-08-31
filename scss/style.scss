@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
 @import "mixins.scss";
 @import "normalize.scss";
-@import "responsive.scss";
 
 // ================== Header section ======================
 
@@ -225,7 +224,7 @@ section.about {
 
     .about-image {
         width: 566px;
-        width: 675px;
+        height: 675px;
 
         img {
             width: 100%;
@@ -809,3 +808,7 @@ footer {
         }
     }
 }
+
+// Responsive design import
+@import "responsive.scss";
+

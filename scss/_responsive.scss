@@ -20,17 +20,17 @@
         }
 
         .auth {
-
-            .login , .register {
-                font-size: 18px!important;
+            .login,
+            .register {
+                font-size: 18px !important;
             }
         }
     }
 
     section.hero {
         flex-wrap: wrap-reverse;
-        justify-content: center!important;
-       
+        justify-content: center !important;
+
         .hero-content {
             margin-top: 80px;
             text-align: center;
@@ -47,7 +47,7 @@
             }
 
             .search-container {
-                margin:  0 auto;
+                margin: 0 auto;
             }
         }
 
@@ -62,30 +62,39 @@
     .container {
         width: 850px;
     }
+
+    section.about {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 30;
+
+        .about-content {
+            text-align: center;
+            width: 600px !important;
+
+            .about-heading {
+                margin: 10px auto!important;
+            }
+
+            .about-insight {
+                margin: 4px auto!important;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 860px) {
-
     .container {
         width: 700px;
     }
-    
+
     .auth {
         display: none;
     }
 }
 
 @media screen and (max-width: 760px) {
-
     .container {
         width: 600px;
     }
-    
 }
-
-
-
-
-
-
-
