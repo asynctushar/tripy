@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+@import "mixins.scss";
 
 $bg-1: #f5f5f5;
 $bg-3: #fdfdfd;
@@ -743,6 +744,135 @@ section.packages {
                     font-size: 14px;
                     line-height: 18.48px;
                 }
+            }
+        }
+    }
+}
+
+// ================ Footer section ================f
+footer {
+    height: 400px;
+    padding-top: 119px !important;
+    padding-bottom: 119px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    .brand-details {
+        width: 200px;
+        height: 129px;
+        margin-right: 100px;
+
+        .brand-logo {
+            margin-bottom: 18px;
+        }
+
+        .address {
+            font-size: 14px;
+            line-height: 19.6px;
+            font-weight: 400;
+            color: $color-grey;
+            margin-bottom: 18px;
+        }
+
+        .socials {
+            img {
+                margin-right: 12px;
+                width: 24px;
+                height: 24px;
+            }
+
+            .youtube {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .about-col {
+        width: 54px;
+        height: 162px;
+        margin-right: 146px;
+
+        .title {
+            @include title;
+        }
+
+        .about-item {
+            @include footer-item;
+        }
+    }
+
+    .company-col {
+        width: 92px;
+        height: 162px;
+        margin-right: 108px;
+
+        .title {
+            @include title;
+        }
+
+        .company-item {
+            @include footer-item;
+        }
+    }
+
+    .support-col {
+        width: 92px;
+        height: 162px;
+        margin-right: 108px;
+
+        .title {
+            @include title;
+        }
+
+        .support-item {
+            @include footer-item;
+        }
+    }
+    .newsletter-col {
+        width: 270px;
+        height: 159px;
+
+        .title {
+            @include title;
+        }
+
+        .newsletter-text {
+            @include footer-item;
+            cursor: text !important;
+        }
+
+        .newsletter-form {
+            margin-top: 18px;
+            box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+            border-radius: 55px;
+            background-color: $color-search-container;
+            width: 270px;
+            height: 51px;
+            padding: 10px 8px 9px 19px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .search-field {
+                border: none;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16.8px;
+                color: $color-skyblue;
+            }
+
+            .search-field::placeholder {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16.8px;
+                color: $color-grey;
+            }
+
+            .submit {
+                border: none;
+                background-color: inherit;
+                cursor: pointer;
             }
         }
     }
