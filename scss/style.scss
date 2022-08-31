@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
 
 $bg-1: #f5f5f5;
+$bg-3: #fdfdfd;
 $bg-nav: #fff;
+$bg-2: #fafafa;
 
 $color-1: #000;
 $color-grey: #808080;
 $color-skyblue: #112b3c;
 $color-pink: #e61c5d;
-$color-orange: #FFBD39;
+$color-orange: #ffbd39;
 $color-search-container: #fff;
 
 * {
@@ -24,14 +26,13 @@ html {
 }
 
 body {
-    background-color: $bg-1;
+    background-color: $bg-3;
     color: $color-1;
     font-family: "Barlow", sans-serif;
 }
 
 .container {
     margin: auto;
-    padding: 0 135px;
 }
 
 .btn {
@@ -47,14 +48,24 @@ body {
         width: 750px;
     }
 }
-@media (min-width: 992px) {
+
+@media (min-width: 950px) {
     .container {
-        width: 970px;
+        width: 900px;
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        padding: 0 50px;
+    }
+}
+
 @media (min-width: 1440px) {
     .container {
         width: 1440px;
+        padding: 0 135px;
     }
 }
 
@@ -62,6 +73,7 @@ body {
 
 header {
     background-color: $bg-nav;
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 }
 
 nav {
@@ -299,6 +311,7 @@ section.about {
             line-height: 19px;
             font-weight: 700;
             letter-spacing: 0.1rem;
+            text-transform: uppercase;
         }
 
         .about-heading {
@@ -353,7 +366,7 @@ section.about {
 
 // ================= Packages section ===============
 section.packages {
-    margin: 96px auto;
+    margin-top: 96px;
     height: 719px;
 
     .package-header {
@@ -363,20 +376,20 @@ section.packages {
         margin-bottom: 80px;
 
         .package-header-content {
-            width: 591px;
-
             .package-title {
                 color: $color-pink;
                 font-size: 16px;
                 line-height: 19px;
                 letter-spacing: 0.1rem;
                 margin-bottom: 4px;
+                text-transform: uppercase;
             }
 
             .package-heading {
                 color: $color-skyblue;
                 font-size: 48px;
                 line-height: 58px;
+                font-weight: 700;
             }
         }
 
@@ -409,7 +422,7 @@ section.packages {
         .slide-item {
             margin-right: 30px;
             width: 370px;
-            filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
+            filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.048));
             transition: all 0.5s step-start;
 
             .slide-image {
@@ -443,7 +456,7 @@ section.packages {
                     border-radius: 38px;
                     padding: 4px 6px;
                     align-items: center;
-                    
+
                     .img {
                         width: 15.55px;
                         height: 15.64;
@@ -497,4 +510,120 @@ section.packages {
     }
 }
 
+// ================== Testimonial section ===================
+.testimonial {
+    margin: 120px auto;
 
+    .testimonial-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        color: $color-pink;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .testimonial-heading {
+        text-align: center;
+        font-size: 48px;
+        line-height: 58px;
+        color: $color-skyblue;
+    }
+
+    .testimonial-slider {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-nav,
+        .right-nav {
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .slider {
+            margin: 0 52px;
+            width: 970px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .slide-item {
+                margin-right: 32px;
+                width: 302px;
+                background-color: $color-search-container;
+                box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+                border: 1px solid #fafafa;
+                border-radius: 16px;
+                padding: 46px 37px 42px 41px;
+                position: relative;
+
+                .quote-icon {
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    transform: translateY(-50%);
+                }
+
+                .slide-card {
+                    text-align: center;
+
+                    .slide-image {
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: 8px;
+                    }
+
+                    .client {
+                        font-size: 18px;
+                        line-height: 21.6px;
+                        font-weight: 700;
+                        color: $color-skyblue;
+                    }
+
+                    .client-role {
+                        margin: 4px 0;
+                        font-size: 14px;
+                        line-height: 17px;
+                        font-weight: 400;
+                        color: $color-skyblue;
+                    }
+
+                    .rating {
+                        height: 16px;
+
+                        img {
+                            line-height: 16px;
+                            height: 100%;
+                            margin: auto;
+                        }
+                    }
+
+                    .client-quote {
+                        font-size: 14px;
+                        line-height: 18.62px;
+                        width: 224px;
+                        height: 95px;
+                        margin-top: 12px;
+                        font-weight: 400;
+                        color: $color-skyblue;
+                    }
+                }
+            }
+
+            .slide-item:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
