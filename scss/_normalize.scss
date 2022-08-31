@@ -1,0 +1,40 @@
+$bg-1: #fdfdfd;
+
+$color-dark: #000;
+$color-grey: #808080;
+$color-skyblue: #112b3c;
+$color-pink: #e61c5d;
+$color-orange: #ffbd39;
+$color-white: #fff;
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-1;
+    color: $color-dark;
+    font-family: "Barlow", sans-serif;
+}
+
+.container {
+    margin: auto;
+    padding: 0 135px;
+}
+
+.btn {
+    padding: 18px 24px;
+    border-radius: 45px;
+    border: none;
+    color: $color-white;
+    background-color: $color-pink;
+}

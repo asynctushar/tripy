@@ -20,6 +20,7 @@ body {
 
 .container {
   margin: auto;
+  padding: 0 135px;
 }
 
 .btn {
@@ -30,26 +31,37 @@ body {
   background-color: #e61c5d;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 1170px) {
   .container {
-    width: 750px;
+    width: 1000px;
+    padding: 0 60px;
+  }
+  header .navbar {
+    width: 350px;
+  }
+  header .navbar .nav-link {
+    font-size: 18px;
+  }
+  header .auth .login, header .auth .register {
+    font-size: 18px !important;
   }
 }
-@media (min-width: 950px) {
+@media screen and (max-width: 1000px) {
   .container {
-    width: 900px;
+    width: 850px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (max-width: 860px) {
   .container {
-    width: 1170px;
-    padding: 0 50px;
+    width: 700px;
+  }
+  .auth {
+    display: none;
   }
 }
-@media (min-width: 1440px) {
+@media screen and (max-width: 760px) {
   .container {
-    width: 1440px;
-    padding: 0 135px;
+    width: 600px;
   }
 }
 header {
@@ -74,7 +86,6 @@ nav {
   width: 455px;
   display: flex;
   justify-content: space-between;
-  gap: 40;
 }
 
 .nav-item {

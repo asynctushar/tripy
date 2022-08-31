@@ -1,79 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
 @import "mixins.scss";
-
-$bg-1: #f5f5f5;
-$bg-3: #fdfdfd;
-$bg-nav: #fff;
-$bg-2: #fafafa;
-
-$color-1: #000;
-$color-grey: #808080;
-$color-skyblue: #112b3c;
-$color-pink: #e61c5d;
-$color-orange: #ffbd39;
-$color-search-container: #fff;
-
-* {
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: $bg-3;
-    color: $color-1;
-    font-family: "Barlow", sans-serif;
-}
-
-.container {
-    margin: auto;
-}
-
-.btn {
-    padding: 18px 24px;
-    border-radius: 45px;
-    border: none;
-    color: $bg-nav;
-    background-color: $color-pink;
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 950px) {
-    .container {
-        width: 900px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-        padding: 0 50px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .container {
-        width: 1440px;
-        padding: 0 135px;
-    }
-}
+@import "normalize.scss";
+@import "responsive.scss";
 
 // ================== Header section ======================
 
 header {
-    background-color: $bg-nav;
+    background-color: $color-white;
     box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 }
 
@@ -94,7 +27,6 @@ nav {
     width: 455px;
     display: flex;
     justify-content: space-between;
-    gap: 40;
 }
 
 .nav-item {
@@ -177,7 +109,7 @@ section.hero {
 .search-container {
     width: 479px;
     height: 80px;
-    background-color: $color-search-container;
+    background-color: $color-white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -562,7 +494,7 @@ section.packages {
             .slide-item {
                 margin-right: 32px;
                 width: 302px;
-                background-color: $color-search-container;
+                background-color: $color-white;
                 box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
                 border: 1px solid #fafafa;
                 border-radius: 16px;
@@ -665,7 +597,7 @@ section.packages {
             height: 217px;
             align-self: flex-end;
             padding: 6px 7px 12px;
-            background-color: $color-search-container;
+            background-color: $color-white;
             filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
             border-radius: 16px;
 
@@ -709,7 +641,7 @@ section.packages {
             height: 290px;
             padding: 8px 10px 20px;
             filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
-            background-color: $color-search-container;
+            background-color: $color-white;
             border-radius: 16px;
             align-self: flex-start;
 
@@ -846,7 +778,7 @@ footer {
             margin-top: 18px;
             box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
             border-radius: 55px;
-            background-color: $color-search-container;
+            background-color: $color-white;
             width: 270px;
             height: 51px;
             padding: 10px 8px 9px 19px;
