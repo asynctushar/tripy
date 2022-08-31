@@ -627,3 +627,123 @@ section.packages {
         }
     }
 }
+
+// ================= Tours section ===================
+.tours {
+    margin-bottom: 120px;
+
+    .tours-heading {
+        text-align: center;
+        font-size: 48px;
+        line-height: 58px;
+        color: $color-skyblue;
+    }
+
+    .tour-query {
+        text-align: center !important;
+        font-style: 18px;
+        line-height: 22px;
+        color: $color-grey;
+        font-weight: 400;
+        margin: 32px 0;
+    }
+
+    .alltour-button {
+        display: block;
+        margin: auto;
+    }
+
+    .tour-card-container {
+        margin-top: -30px;
+        height: 330px;
+        display: flex;
+        justify-content: space-between;
+
+        .tour-card {
+            width: 190px;
+            height: 217px;
+            align-self: flex-end;
+            padding: 6px 7px 12px;
+            background-color: $color-search-container;
+            filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
+            border-radius: 16px;
+
+            .tour-card-image {
+                width: 176px;
+                height: 143px;
+            }
+
+            .tour-place {
+                margin: 12px 0 8px;
+                line-height: 17px;
+                font-size: 14px;
+                font-weight: 700;
+                color: $color-skyblue;
+            }
+
+            .card-footer {
+                width: 101px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .price {
+                    color: $color-pink;
+                    font-size: 16px;
+                    line-height: 21px;
+                    font-weight: 700;
+                }
+
+                .tour-duration {
+                    color: $color-grey;
+                    font-size: 10px;
+                    line-height: 13.2px;
+                }
+            }
+        }
+
+        .tour-card:first-child,
+        .tour-card:last-child {
+            width: 254px;
+            height: 290px;
+            padding: 8px 10px 20px;
+            filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
+            background-color: $color-search-container;
+            border-radius: 16px;
+            align-self: flex-start;
+
+            .tour-card-image {
+                width: 234px;
+                height: 190px;
+            }
+
+            .tour-place {
+                margin: 12px 0 8px;
+                line-height: 23.76px;
+                font-size: 18px;
+                font-weight: 700;
+                color: $color-skyblue;
+            }
+
+            .card-footer {
+                width: 128px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .price {
+                    color: $color-pink;
+                    font-size: 20px;
+                    line-height: 26.4px;
+                    font-weight: 700;
+                }
+
+                .tour-duration {
+                    color: $color-grey;
+                    font-size: 14px;
+                    line-height: 18.48px;
+                }
+            }
+        }
+    }
+}

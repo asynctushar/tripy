@@ -556,4 +556,112 @@ section.packages .nav-end .slide-item:first-child {
   margin-right: 0;
 }
 
+.tours {
+  margin-bottom: 120px;
+}
+.tours .tours-heading {
+  text-align: center;
+  font-size: 48px;
+  line-height: 58px;
+  color: #112b3c;
+}
+.tours .tour-query {
+  text-align: center !important;
+  font-style: 18px;
+  line-height: 22px;
+  color: #808080;
+  font-weight: 400;
+  margin: 32px 0;
+}
+.tours .alltour-button {
+  display: block;
+  margin: auto;
+}
+.tours .tour-card-container {
+  margin-top: -30px;
+  height: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+.tours .tour-card-container .tour-card {
+  width: 190px;
+  height: 217px;
+  align-self: flex-end;
+  padding: 6px 7px 12px;
+  background-color: #fff;
+  filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
+  border-radius: 16px;
+}
+.tours .tour-card-container .tour-card .tour-card-image {
+  width: 176px;
+  height: 143px;
+}
+.tours .tour-card-container .tour-card .tour-place {
+  margin: 12px 0 8px;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #112b3c;
+}
+.tours .tour-card-container .tour-card .card-footer {
+  width: 101px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tours .tour-card-container .tour-card .card-footer .price {
+  color: #e61c5d;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.tours .tour-card-container .tour-card .card-footer .tour-duration {
+  color: #808080;
+  font-size: 10px;
+  line-height: 13.2px;
+}
+.tours .tour-card-container .tour-card:first-child,
+.tours .tour-card-container .tour-card:last-child {
+  width: 254px;
+  height: 290px;
+  padding: 8px 10px 20px;
+  filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
+  background-color: #fff;
+  border-radius: 16px;
+  align-self: flex-start;
+}
+.tours .tour-card-container .tour-card:first-child .tour-card-image,
+.tours .tour-card-container .tour-card:last-child .tour-card-image {
+  width: 234px;
+  height: 190px;
+}
+.tours .tour-card-container .tour-card:first-child .tour-place,
+.tours .tour-card-container .tour-card:last-child .tour-place {
+  margin: 12px 0 8px;
+  line-height: 23.76px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #112b3c;
+}
+.tours .tour-card-container .tour-card:first-child .card-footer,
+.tours .tour-card-container .tour-card:last-child .card-footer {
+  width: 128px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tours .tour-card-container .tour-card:first-child .card-footer .price,
+.tours .tour-card-container .tour-card:last-child .card-footer .price {
+  color: #e61c5d;
+  font-size: 20px;
+  line-height: 26.4px;
+  font-weight: 700;
+}
+.tours .tour-card-container .tour-card:first-child .card-footer .tour-duration,
+.tours .tour-card-container .tour-card:last-child .card-footer .tour-duration {
+  color: #808080;
+  font-size: 14px;
+  line-height: 18.48px;
+}
+
 /*# sourceMappingURL=style.css.map */
