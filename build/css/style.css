@@ -253,7 +253,6 @@ section.about {
 }
 section.about .about-image {
   width: 566px;
-  height: 675px;
 }
 section.about .about-image img {
   width: 100%;
@@ -788,6 +787,25 @@ footer .newsletter-col .newsletter-form .submit {
   section.hero {
     padding: 0 60px;
   }
+  section.packages .package-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.packages .package-header .package-header-content {
+    margin-bottom: 60px;
+  }
+  section.packages .package-header .package-header-content .package-heading {
+    margin-bottom: 10px;
+  }
+  section.packages .package-header .package-header-content .package-heading br {
+    display: none;
+  }
+  section.packages .package-slider {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto !important;
+    width: auto;
+  }
 }
 @media screen and (max-width: 1170px) {
   .container {
@@ -838,6 +856,9 @@ header .auth .register {
     justify-content: center !important;
     gap: 30;
   }
+  section.about .about-image {
+    width: 550px;
+  }
   section.about .about-content {
     text-align: center;
     width: 600px !important;
@@ -847,6 +868,23 @@ header .auth .register {
   }
   section.about .about-content .about-insight {
     margin: 4px auto !important;
+  }
+  section.packages {
+    overflow: visible;
+    margin-bottom: 250px !important;
+  }
+  section.packages .package-slider .slide-item {
+    margin: 0;
+    text-align: center;
+  }
+  section.packages .package-slider .slide-item .rating {
+    margin: auto;
+  }
+  section.packages .package-slider .slide-item .slide-footer {
+    justify-content: center !important;
+  }
+  section.packages .package-slider .slide-item .slide-footer .price, section.packages .package-slider .slide-item .slide-footer .package-duration {
+    margin: 5px 10px;
   }
 }
 @media screen and (max-width: 860px) {

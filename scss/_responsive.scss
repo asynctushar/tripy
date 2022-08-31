@@ -2,6 +2,32 @@
     section.hero {
         padding: 0 60px;
     }
+
+    section.packages {
+        .package-header {
+            flex-direction: column;
+            text-align: center;
+
+            .package-header-content {
+                margin-bottom: 60px;
+
+                .package-heading {
+                    margin-bottom: 10px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .package-slider {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: auto !important;
+            width: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 1170px) {
@@ -68,16 +94,44 @@
         justify-content: center !important;
         gap: 30;
 
+        .about-image {
+            width: 550px;
+        }
+
         .about-content {
             text-align: center;
             width: 600px !important;
 
             .about-heading {
-                margin: 10px auto!important;
+                margin: 10px auto !important;
             }
 
             .about-insight {
-                margin: 4px auto!important;
+                margin: 4px auto !important;
+            }
+        }
+    }
+
+    section.packages {
+        overflow: visible;
+        margin-bottom: 250px!important;
+
+        .package-slider {
+            .slide-item {
+                margin: 0;
+                text-align: center;
+
+                .rating {
+                    margin: auto;
+                }
+
+                .slide-footer {
+                    justify-content: center !important;
+                    
+                    .price, .package-duration {
+                        margin: 5px 10px;
+                    }
+                }
             }
         }
     }
