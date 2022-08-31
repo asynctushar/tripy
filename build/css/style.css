@@ -31,6 +31,11 @@ body {
   background-color: #e61c5d;
 }
 
+@media screen and (max-width: 1400px) {
+  section.hero {
+    padding: 0 60px;
+  }
+}
 @media screen and (max-width: 1170px) {
   .container {
     width: 1000px;
@@ -44,6 +49,30 @@ body {
   }
   header .auth .login, header .auth .register {
     font-size: 18px !important;
+  }
+  section.hero {
+    flex-wrap: wrap-reverse;
+    justify-content: center !important;
+  }
+  section.hero .hero-content {
+    margin-top: 80px;
+    text-align: center;
+  }
+  section.hero .hero-content .hero-heading {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  section.hero .hero-content .hero-text {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 40px auto;
+  }
+  section.hero .hero-content .search-container {
+    margin: 0 auto;
+  }
+  section.hero .hero-image {
+    margin-left: 40px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 1000px) {
