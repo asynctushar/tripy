@@ -478,9 +478,9 @@ section.packages .nav-end .slide-item:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 32px;
 }
 .testimonial .testimonial-slider .slider .slide-item {
-  margin-right: 32px;
   width: 302px;
   background-color: #fff;
   box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
@@ -532,9 +532,6 @@ section.packages .nav-end .slide-item:first-child {
   margin-top: 12px;
   font-weight: 400;
   color: #112b3c;
-}
-.testimonial .testimonial-slider .slider .slide-item:last-child {
-  margin-right: 0;
 }
 
 .tours {
@@ -784,7 +781,7 @@ footer .newsletter-col .newsletter-form .submit {
 }
 
 @media screen and (max-width: 1400px) {
-  section.hero {
+  .container {
     padding: 0 60px;
   }
   section.packages .package-header {
@@ -805,6 +802,10 @@ footer .newsletter-col .newsletter-form .submit {
     justify-content: space-evenly;
     margin: auto !important;
     width: auto;
+  }
+  section.testimonial .testimonial-slider .slider {
+    margin: 0 5px !important;
+    gap: 20px !important;
   }
 }
 @media screen and (max-width: 1170px) {
@@ -846,6 +847,27 @@ header .auth .register {
     margin-left: 40px;
     margin-top: 40px;
   }
+  section.testimonial {
+    overflow: visible;
+  }
+  section.testimonial .testimonial-slider {
+    margin: 80px auto 0;
+  }
+  section.testimonial .testimonial-slider .left-nav, section.testimonial .testimonial-slider .right-nav {
+    display: none;
+  }
+  section.testimonial .testimonial-slider .slider {
+    gap: 10px !important;
+    width: 700px !important;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto !important;
+  }
+  section.testimonial .testimonial-slider .slider .slide-item {
+    width: 70%;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 1000px) {
   .container {
@@ -883,7 +905,8 @@ header .auth .register {
   section.packages .package-slider .slide-item .slide-footer {
     justify-content: center !important;
   }
-  section.packages .package-slider .slide-item .slide-footer .price, section.packages .package-slider .slide-item .slide-footer .package-duration {
+  section.packages .package-slider .slide-item .slide-footer .price,
+section.packages .package-slider .slide-item .slide-footer .package-duration {
     margin: 5px 10px;
   }
 }
