@@ -6,6 +6,7 @@
 }
 
 @mixin footer-item {
+    display: inline-block;
     font-size: 13.6px;
     font-weight: 400;
     line-height: 16.8px;

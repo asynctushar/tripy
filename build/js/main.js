@@ -1,3 +1,5 @@
+// currently not working properly. 
+
 const leftNav = document.getElementById('left-slide');
 const rightNav = document.getElementById('right-slide');
 const slider = document.getElementById('slider');
