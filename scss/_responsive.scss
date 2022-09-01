@@ -33,7 +33,7 @@
         .testimonial-slider {
             .slider {
                 margin: 0 5px !important;
-                gap: 20px!important;
+                gap: 20px !important;
             }
         }
     }
@@ -94,21 +94,22 @@
 
     section.testimonial {
         overflow: visible;
-        
+
         .testimonial-slider {
             margin: 80px auto 0;
 
-            .left-nav, .right-nav {
+            .left-nav,
+            .right-nav {
                 display: none;
             }
 
             .slider {
-                gap: 10px!important;
-                width: 700px!important;
+                gap: 10px !important;
+                width: 700px !important;
                 height: auto;
                 flex-wrap: wrap;
                 justify-content: center;
-                margin: auto!important;
+                margin: auto !important;
 
                 .slide-item {
                     width: 70%;
@@ -171,6 +172,26 @@
             }
         }
     }
+
+    section.tours {
+        .tour-card-container {
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: auto;
+
+            .tour-card {
+                width: 254px;
+                height: 290px;
+                margin: 20px;
+
+                .tour-card-image {
+                    width: 234px;
+                    height: 190px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -180,6 +201,15 @@
 
     .auth {
         display: none;
+    }
+
+    section.tours {
+        padding: 0 30px;
+        
+        .tours-heading {
+            font-size: 40px;
+            line-height: 50px;
+        }
     }
 }
 
