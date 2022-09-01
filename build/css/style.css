@@ -644,8 +644,7 @@ section.packages .nav-end .slide-item:first-child {
 
 footer {
   height: 400px;
-  padding-top: 119px !important;
-  padding-bottom: 119px !important;
+  padding: 119px !important;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -807,6 +806,13 @@ footer .newsletter-col .newsletter-form .submit {
     margin: 0 5px !important;
     gap: 20px !important;
   }
+  section.testimonial .testimonial-slider .slide-item {
+    text-align: center;
+  }
+  section.testimonial .testimonial-slider .slide-item p {
+    display: inline-block;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 1170px) {
   .container {
@@ -869,6 +875,25 @@ section.testimonial .testimonial-slider .right-nav {
     width: 70%;
     margin: auto;
   }
+  footer {
+    flex-wrap: wrap;
+    gap: 80px;
+    height: auto;
+    margin: auto;
+  }
+  footer .brand-details, footer .newsletter-col {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+  footer .newsletter-col form {
+    display: inline-block;
+    margin: auto;
+  }
+  footer .support-col, footer .company-col, footer .about-col {
+    text-align: center;
+    margin: 0 30px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .container {
@@ -910,6 +935,9 @@ section.testimonial .testimonial-slider .right-nav {
 section.packages .package-slider .slide-item .slide-footer .package-duration {
     margin: 5px 10px;
   }
+  section.tours {
+    margin-bottom: 60px !important;
+  }
   section.tours .tour-card-container {
     margin-top: 30px;
     flex-wrap: wrap;
@@ -924,6 +952,9 @@ section.packages .package-slider .slide-item .slide-footer .package-duration {
   section.tours .tour-card-container .tour-card .tour-card-image {
     width: 234px;
     height: 190px;
+  }
+  footer {
+    padding-top: 60px !important;
   }
 }
 @media screen and (max-width: 860px) {
@@ -944,6 +975,9 @@ section.packages .package-slider .slide-item .slide-footer .package-duration {
 @media screen and (max-width: 760px) {
   .container {
     width: 600px;
+  }
+  .support-col, .company-col, .about-col {
+    display: none;
   }
 }
 

@@ -30,13 +30,25 @@
     }
 
     section.testimonial {
+
         .testimonial-slider {
             .slider {
                 margin: 0 5px !important;
                 gap: 20px !important;
             }
+
+            .slide-item {
+                text-align: center;
+
+                p {
+                    display: inline-block;
+                    margin: auto;
+                }
+            }
         }
     }
+
+   
 }
 
 @media screen and (max-width: 1170px) {
@@ -118,6 +130,34 @@
             }
         }
     }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 80px;
+        height: auto;
+        margin: auto;
+
+        .brand-details, .newsletter-col {
+            width: 100%;
+            text-align: center;
+            margin-right: 0;
+
+        }
+
+        .newsletter-col {
+            form {
+                display: inline-block;
+                margin: auto;
+            }
+        }
+
+        .support-col, .company-col, .about-col {
+            text-align: center;
+            margin: 0 30px;
+        }
+
+        
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -174,6 +214,8 @@
     }
 
     section.tours {
+        margin-bottom: 60px!important;
+        
         .tour-card-container {
             margin-top: 30px;
             flex-wrap: wrap;
@@ -192,6 +234,10 @@
             }
         }
     }
+
+    footer {
+        padding-top: 60px!important;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -205,7 +251,7 @@
 
     section.tours {
         padding: 0 30px;
-        
+
         .tours-heading {
             font-size: 40px;
             line-height: 50px;
@@ -216,5 +262,9 @@
 @media screen and (max-width: 760px) {
     .container {
         width: 600px;
+    }
+
+    .support-col, .company-col, .about-col {
+        display: none;
     }
 }
